@@ -1,0 +1,87 @@
+body{
+    background-image: url(http://res.cloudinary.com/dypxyqsre/image/upload/v1514789407/zebra_pbbfvj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    /*background-color: darkslateblue*/
+    /*background: linear-gradient(to left, #00ccff,#b3f0ff);
+    box-shadow: 3px 5px 3px black;*/
+}
+
+h1{
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
+}
+
+/*--style groupings--*/
+
+html h3 {
+    color:chartreuse;
+}
+
+body h3 {
+    color:green;
+}
+
+
+
+h3, h4, h5, .class, #id {
+    color:chocolate;
+    text-shadow: 3px 3px 6px grey;
+}
+
+h2{
+    color: rgb(0,204,25);  
+    text-shadow: 1px 1px 3px darkblue;
+}
+
+h2{
+    color:blue
+}
+
+.borderImg{
+    border: 10px dashed red;
+}
+ul li{
+    color: aqua;
+    font-size: 20px;
+}
+
+ul > li {
+    color: yellow;
+}
+
+ul > ol > ol > li {
+    color:purple
+}
+
+.container h6 { /* .container h6 (11) wins out over div h6 (2) */
+    color: red
+}
+
+div h6{
+    color: cadetblue
+}
+
+#foo {          /* #foo (ID = +100)wins out over [id="foo"] (class/pseudo-class/attribute = +10) */
+    color: coral
+}
+
+[id="foo"]{
+    color: cyan
+}
+
+/*-- Specificity:   
+Style attribue, ID , (Class, Pseudo-class, attribute), Elements
++1000         +100                +10                     +1
+Highest Specifity <-------------------------------->Lowest Specifity
+
+GENERAL RULE:
+1. the deeper down in the hierarchy, the Lower the Specificity
+2. the higher total Specificity Point Value wins (e.g. [.container h1] = 11 > 2 = [div h1])
+3. HOWEVER, the LAST CSS rule in main.css will WIN
+4. Inline styling (e.g. HTML: <h1 style="color:blue">) trumps ALL OTHER CSS styles
+4. "!important"(e.g. h1 { color: green !important}) CSS tag OVERRIDES everything [try not to use this]
+--*/
