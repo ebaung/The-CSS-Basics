@@ -1,6 +1,4 @@
-html {
-    font-family: "Times New Roman",serif, sans-serif;
-}
+
 
 body{
 /*
@@ -17,20 +15,23 @@ body{
     /*background: linear-gradient(to left, #00ccff,#b3f0ff);
     box-shadow: 3px 5px 3px black;*/
 }
-
-
-
-
-
-h1, h2, h3 {
-    color:#ffffff;
-    line-height: 1rem;
-    font-style: italic;
+h1 {
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Open+Sans+Condensed:300', serif, sans-serif;
 }
 
 h2 {
-    font-size: 30px;
-    font-style: normal;
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Oswald', serif, sans-serif;
+}
+
+
+h3 {
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Supermercado+One', serif, sans-serif;
 }
 
 .formatting {
